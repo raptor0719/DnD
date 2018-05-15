@@ -26,6 +26,26 @@ h2, h3, h4 {
 	margin-bottom: 0;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+dd > dl > dt {
+	text-decoration: underline;
+}
+
+dd > dl > dt::after {
+	content: ":";
+}
+
+body > dl > dt {
+	font-size: 1.15em;
+	font-style: italic;
+	font-weight: bolder;
+	margin-top: 2em;
+}
+
 .toc-link {
 	display: block;
 	margin-top: 3em;
