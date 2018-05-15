@@ -1,137 +1,139 @@
-<head>
-	<link rel="stylesheet" type="text/css" href="/Webpage/Styles/style.css"/>
-</head>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/Webpage/Styles/style.css"/>
+	</head>
 
-<body>
-	<h2>Spell Scrolls</h2>
-	<p>Spell scrolls are scrolls imbued with the singular use of a particular spell. A spell scroll, at the minimum, details a Spell Rune which represents a spell. The material, vocal, and somatic components are imbued into the rune when the scroll is created. Creators of scrolls may also choose to add additional arbitrary text to the scroll. This is often used to detail the activation word/phrase for the scroll, perhaps how to use it, or the name of the spell, but could also be used maliciously by describing the wrong spell, or detailing an improper use.</p>
-	<p>Details of creating a scroll are listed under "<a href="/Webpage/pages/mechanics/downtimeActivities.html">Downtime Activities</a>"</p>
-	
-	<h3>Figuring Out What a Scroll Does</h3>
-	<p>Identifying the scroll can be done using the <i>Identify</i> spell.</p>
-	<p>If the character can cast the spell of the scroll, they can immediately recognize the effects, but not the activation phrase.</p>
-	<div>
-		<p>Information can also be gleaned from a non-encrypted, or a previously decrypted. A character spends 8 hours to glean information from the scroll. At the end, the character rolls an arcana check. This check is compared against the DC of the scroll.</p>
-		<samp><b>Scroll DC</b> = 3 * (Scroll Spell Level + 1)</samp>
-		<p>If a character has an innate ability to cast spells, they gain a +1 bonus per character level added to their check.</p>
-	</div>
-	
-	<h4>Scroll Gleaning</h4>
-	<table>
-		<thead>
-			<tr>
-				<th>Arcana Roll - DC</th>
-				<th>Outcome</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>&lt;= 0</td>
-				<td>No information is determined</td>
-			</tr>
-			<tr>
-				<td>1-5</td>
-				<td>1 fact is gleaned</td>
-			</tr>
-			<tr>
-				<td>6-10</td>
-				<td>2 facts are gleaned</td>
-			</tr>
-			<tr>
-				<td>11-15</td>
-				<td>3 facts are gleaned</td>
-			</tr>
-			<tr>
-				<td>16+</td>
-				<td>All facts are gleaned</td>
-			</tr>
-		</tbody>
-	</table>
-	<p>A fact could be one of the following: Is the spell harmful or helpful? Is it self-casted, does it target the ground, or target a character? What is the school of magic? The facts given are to the discretion of the DM.</p>
-	<p>The DM can also say the character knows more about the scroll without giving anything specific, for the purposes of counting toward the maximum facts known described below.</p>
-	<p>After learning (Scroll Spell Level + 1) (up to 6) or more facts about the scroll, the character knows everything about the scroll, and can know the exact spell the scroll contains.</p>
-	
-	<h3>Using a Spell Scroll</h3>
-	<p>To use the scroll, the user must be touching the scroll. They may then use an action to utilize the spell. The scroll, in its entirety, disintegrates upon use.</p>
-	<p>A user may use a scroll without knowing it’s true nature. They may choose a potential target character or location for the spell and use the scroll. If this is the case, roll on the <b>Unknown Spell Scroll</b> table to determine the effect.</p>
-	
-	<h4>Unknown Spell Scroll</h4>
-	<table>
-		<thead>
-			<tr>
-				<th>Roll (1d100)</th>
-				<th>Effect</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1-5</td>
-				<td>The spell malfunctions, dealing 1d6 per spell level of force damage to everything, as well as knocking them prone, in (5 * spell level) foot radius around the user.</td>
-			</tr>
-			<tr>
-				<td>6-35</td>
-				<td>The spell fizzles.</td>
-			</tr>
-			<tr>
-				<td>36-85</td>
-				<td>The spell is used immediately on the determined target.</td>
-			</tr>
-			<tr>
-				<td>86-95</td>
-				<td>The user, for a brief moment, is filled with the energy of the spell, knowing it’s exact nature. If the spell requires a target, they must immediately choose one. If not, the spell is used automatically.</td>
-			</tr>
-			<tr>
-				<td>96-100</td>
-				<td>The spell fizzles, the scroll remains intact, and the user gains complete knowledge of the scroll.</td>
-			</tr>
-		</tbody>
-	</table>
-	
-	<h3>Spell Save and Spell Attack Modifier</h3>
-	<div>
-		<p>Characters that already have a defined spell save and spell attack modifier may use their own for spell scrolls. Characters that do NOT have these defined use the following:</p>
-		<samp><b>Spell Save DC</b> = 8 + intelligence modifier</samp>
-		<samp><b>Spell Attack Modifier</b> = intelligence modifier</samp>
-		<p>Notice that proficiency bonus is NOT included in the above, because non-spellcasters are not proficient in casting spells.</p>
-	</div>
-	
-	<h3>Encrypted Scroll</h3>
-	<p>Some creators of scrolls may choose to encrypt their scrolls with a cipher, modifying the Spell Rune without changing the overall effect of the spell. Decoding the cipher requires the reader to be proficient in the Arcana skill and to roll an Arcana check. The amount of time it takes to decrypt the scroll is based on the difference between the DC of the check versus the roll, described in the table below. The DC of the scroll is based on the INT modifier of the scroll creator.</p>
-	
-	<h3>Decryption Table</h3>
-	<table>
-		<thead>
-			<tr>
-				<th>Arcana Roll - DC</th>
-				<th>Time to Decrypt</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>&gt;= -10</td>
-				<td>7 workweeks</td>
-			</tr>
-			<tr>
-				<td>-5</td>
-				<td>3 workweeks</td>
-			</tr>
-			<tr>
-				<td>0</td>
-				<td>1 workweek</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>3 days</td>
-			</tr>
-			<tr>
-				<td>10</td>
-				<td>1 day</td>
-			</tr>
-		</tbody>
-	</table>
-	
-	<h3>Cursed Scrolls</h3>
-	<p>Scrolls can also be cursed, causing them to have an additional, and usually harmful, effect upon use.</p>
+	<body>
+		<h2>Spell Scrolls</h2>
+		<p>Spell scrolls are scrolls imbued with the singular use of a particular spell. A spell scroll, at the minimum, details a Spell Rune which represents a spell. The material, vocal, and somatic components are imbued into the rune when the scroll is created. Creators of scrolls may also choose to add additional arbitrary text to the scroll. This is often used to detail the activation word/phrase for the scroll, perhaps how to use it, or the name of the spell, but could also be used maliciously by describing the wrong spell, or detailing an improper use.</p>
+		<p>Details of creating a scroll are listed under "<a href="/Webpage/pages/mechanics/downtimeActivities.html">Downtime Activities</a>"</p>
+		
+		<h3>Figuring Out What a Scroll Does</h3>
+		<p>Identifying the scroll can be done using the <i>Identify</i> spell.</p>
+		<p>If the character can cast the spell of the scroll, they can immediately recognize the effects, but not the activation phrase.</p>
+		<div>
+			<p>Information can also be gleaned from a non-encrypted, or a previously decrypted. A character spends 8 hours to glean information from the scroll. At the end, the character rolls an arcana check. This check is compared against the DC of the scroll.</p>
+			<samp><b>Scroll DC</b> = 3 * (Scroll Spell Level + 1)</samp>
+			<p>If a character has an innate ability to cast spells, they gain a +1 bonus per character level added to their check.</p>
+		</div>
+		
+		<h4>Scroll Gleaning</h4>
+		<table>
+			<thead>
+				<tr>
+					<th>Arcana Roll - DC</th>
+					<th>Outcome</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&lt;= 0</td>
+					<td>No information is determined</td>
+				</tr>
+				<tr>
+					<td>1-5</td>
+					<td>1 fact is gleaned</td>
+				</tr>
+				<tr>
+					<td>6-10</td>
+					<td>2 facts are gleaned</td>
+				</tr>
+				<tr>
+					<td>11-15</td>
+					<td>3 facts are gleaned</td>
+				</tr>
+				<tr>
+					<td>16+</td>
+					<td>All facts are gleaned</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>A fact could be one of the following: Is the spell harmful or helpful? Is it self-casted, does it target the ground, or target a character? What is the school of magic? The facts given are to the discretion of the DM.</p>
+		<p>The DM can also say the character knows more about the scroll without giving anything specific, for the purposes of counting toward the maximum facts known described below.</p>
+		<p>After learning (Scroll Spell Level + 1) (up to 6) or more facts about the scroll, the character knows everything about the scroll, and can know the exact spell the scroll contains.</p>
+		
+		<h3>Using a Spell Scroll</h3>
+		<p>To use the scroll, the user must be touching the scroll. They may then use an action to utilize the spell. The scroll, in its entirety, disintegrates upon use.</p>
+		<p>A user may use a scroll without knowing it’s true nature. They may choose a potential target character or location for the spell and use the scroll. If this is the case, roll on the <b>Unknown Spell Scroll</b> table to determine the effect.</p>
+		
+		<h4>Unknown Spell Scroll</h4>
+		<table>
+			<thead>
+				<tr>
+					<th>Roll (1d100)</th>
+					<th>Effect</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1-5</td>
+					<td>The spell malfunctions, dealing 1d6 per spell level of force damage to everything, as well as knocking them prone, in (5 * spell level) foot radius around the user.</td>
+				</tr>
+				<tr>
+					<td>6-35</td>
+					<td>The spell fizzles.</td>
+				</tr>
+				<tr>
+					<td>36-85</td>
+					<td>The spell is used immediately on the determined target.</td>
+				</tr>
+				<tr>
+					<td>86-95</td>
+					<td>The user, for a brief moment, is filled with the energy of the spell, knowing it’s exact nature. If the spell requires a target, they must immediately choose one. If not, the spell is used automatically.</td>
+				</tr>
+				<tr>
+					<td>96-100</td>
+					<td>The spell fizzles, the scroll remains intact, and the user gains complete knowledge of the scroll.</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h3>Spell Save and Spell Attack Modifier</h3>
+		<div>
+			<p>Characters that already have a defined spell save and spell attack modifier may use their own for spell scrolls. Characters that do NOT have these defined use the following:</p>
+			<samp><b>Spell Save DC</b> = 8 + intelligence modifier</samp>
+			<samp><b>Spell Attack Modifier</b> = intelligence modifier</samp>
+			<p>Notice that proficiency bonus is NOT included in the above, because non-spellcasters are not proficient in casting spells.</p>
+		</div>
+		
+		<h3>Encrypted Scroll</h3>
+		<p>Some creators of scrolls may choose to encrypt their scrolls with a cipher, modifying the Spell Rune without changing the overall effect of the spell. Decoding the cipher requires the reader to be proficient in the Arcana skill and to roll an Arcana check. The amount of time it takes to decrypt the scroll is based on the difference between the DC of the check versus the roll, described in the table below. The DC of the scroll is based on the INT modifier of the scroll creator.</p>
+		
+		<h3>Decryption Table</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Arcana Roll - DC</th>
+					<th>Time to Decrypt</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&gt;= -10</td>
+					<td>7 workweeks</td>
+				</tr>
+				<tr>
+					<td>-5</td>
+					<td>3 workweeks</td>
+				</tr>
+				<tr>
+					<td>0</td>
+					<td>1 workweek</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>3 days</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>1 day</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h3>Cursed Scrolls</h3>
+		<p>Scrolls can also be cursed, causing them to have an additional, and usually harmful, effect upon use.</p>
 
-	<a class="toc-link" href="/">Back to Table of Contents</a>
-</body>
+		<a class="toc-link" href="/">Back to Table of Contents</a>
+	</body>
+</html>

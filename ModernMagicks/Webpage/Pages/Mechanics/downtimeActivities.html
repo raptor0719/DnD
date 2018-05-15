@@ -1,433 +1,435 @@
-<head>
-	<link rel="stylesheet" type="text/css" href="/Webpage/Styles/style.css"/>
-	<link rel="stylesheet" type="text/css" href="/Webpage/Styles/downtimeActivities.css"/>
-</head>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/Webpage/Styles/style.css"/>
+		<link rel="stylesheet" type="text/css" href="/Webpage/Styles/downtimeActivities.css"/>
+	</head>
 
-<body>
-	<h2>Downtime Activities</h2>
-	
-	<dl class="activities-list">
-		<dt>Brewing a Potion</dt>
-		<dd>
-			<p>Healing potions can be extremely useful to a party to be healthy in a pinch.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>Time dependinng on power of potion</dd>
-				<dt>Resources</dt>
-				<dd>Gold depending on power of potion</dd>
-				<dt>Requirements</dt>
-				<dd>Proficiency of an herbalism kit and access to one, or an equivelant setup</dd>
-			</dl>
-			<table>
-				<thead>
-					<tr>
-						<th>Type</th>
-						<th>Time</th>
-						<th>Cost</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Standard</td>
-						<td>8 hours</td>
-						<td>10gp</td>
-					</tr>
-					<tr>
-						<td>Greater</td>
-						<td>1 workweek</td>
-						<td>50gp</td>
-					</tr>
-					<tr>
-						<td>Superior</td>
-						<td>3 workweeks</td>
-						<td>100gp</td>
-					</tr>
-					<tr>
-						<td>Supreme</td>
-						<td>4 workweeks</td>
-						<td>250gp</td>
-					</tr>
-				</tbody>
-			</table>
-		</dd>
-		<dt>Buying a Magic Item</dt>
-		<dd>
-			<p>Purchasing a magic item requires time and money to seek out and contact people willing to sell items. Even then, there is no guarantee a seller will have the items a character desires.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>At least 1 workweek</dd>
-				<dt>Resources</dt>
-				<dd>100gp</dd>
-				<dt>Roll</dt>
-				<dd>Charisma (Persuasion)</dd>
-				<dt>Bonus</dt>
-				<dd>+1 to roll per additional Time/Resources spent up to a maximum of 10</dd>
-				<dt>Result</dt>
-				<dd>A potential magic item to purchase.</dd>
-			</dl>
-		</dd>
-		<dt>Carousing</dt>
-		<dd>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 workweek</dd>
-				<dt>Resources</dt>
-				<dd>10gp, 50gp, or 250gp for lower, middle, and upper class respectively</dd>
-				<dt>Roll</dt>
-				<dd>Charisma (Persuasion)</dd>
-				<dt>Result</dt>
-				<dd>Possibility of Hostile or Allied contacts. A hostile contact works against the player, whereas an allied contact will aid the player. A character can only have (1 + CHA MOD) allied contacts, with a minimum of 1, at a time.</dd>
-			</dl>
-		</dd>
-		<dt>Crafting an Item</dt>
-		<dd>
-			<p>A characer who has the time, the money, and the needed tools can use downtime to craft armor, weapons, clothing, or other kinds of gear.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>(Gp cost of item)/50 workweeks</dd>
-				<dt>Resources</dt>
-				<dd>Appropriate tool and (Gp cost of item)/2 worth of materials</dd>
-				<dt>Bonus</dt>
-				<dd>Multiple characters can combine effort to create an item. Time = Workweeks/Characters.</dd>
-				<dt>Result</dt>
-				<dd>An item!</dd>
-			</dl>
-		</dd>
-		<dt>Crime</dt>
-		<dd>
-			<p>Sometime it pays to be bad. This activity gives a character the chance to make some extra cash, at the risk of arrest.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 week</dd>
-				<dt>Resources</dt>
-				<dd>25gp to gather information on potential targets</dd>
-				<dt>Roll</dt>
-				<dd>The character chooses a DC for the target reward based on the table below. The rolls are the following: Dexterity (Stealth), Dexterity using Thieves' Tools, and the choice of Intelligence (Investigation), Wisdom (Perception), or Charisma (Deception).</dd>
-				<dt>Result</dt>
-				<dd>If none of the checks are successful, the character is jailed. They must pay a fine equal to potential earning and spend 1 week in jail per 25gp of the fine. If one check succeeds, the heist fails but the character escapes. Two checks successful, 1/2 the payout. Three checks successful, the full payout.</dd>
-				<dt>Payouts</dt>
-				<dd>
-					<table>
-						<thead>
-							<tr>
-								<th>DC</th>
-								<th>Payout</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>10</td>
-								<td>50gp</td>
-							</tr>
-							<tr>
-								<td>15</td>
-								<td>100gp</td>
-							</tr>
-							<tr>
-								<td>20</td>
-								<td>200gp</td>
-							</tr>
-							<tr>
-								<td>25</td>
-								<td>1000gp</td>
-							</tr>
-						</tbody>
-					</table>
-				</dd>
-			</dl>
-		</dd>
-		<dt>Gambling</dt>
-		<dd>
-			<p>Games of chance are a way to make a fortune - and perhaps a better way to lose one.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 workweek</dd>
-				<dt>Resources</dt>
-				<dd>At least 10gp</dd>
-				<dt>Roll</dt>
-				<dd>3 separate checks, Wisdom (Insight), Charisma (Deception), and Charisma (Intimidation). The DC for each check is determined by the DM.</dd>
-				<dt>Result`</dt>
-				<dd>The results below assume you've already paid your initial wager. For example: Jerry wagers 10gp and rolls 1 success. So, the result is -10gp + 0.5 * 10gp = -10gp + 5gp = -5gp. Jerry lost 5gp from gambling.</dd>
-				<dt>Payout</dt>
-				<dd>
-					<table>
-						<thead>
-							<tr>
-								<th>Successes</th>
-								<th>Payout</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>0</td>
-								<td>Lost 1*Wager</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>Gain 0.5*Wager</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Gain 1.5*Wager</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Gain 2*Wager</td>
-							</tr>
-						</tbody>
-					</table>
-				</dd>
-			</dl>
-		</dd>
-		<dt>Pit Fighting</dt>
-		<dd>
-			<p>Pit fighting includes boxing, wrestling, and other non lethal forms of combat in an organized setting with predetermined matches.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 workweek</dd>
-				<dt>Roll</dt>
-				<dd>3 separate checks, Strength (Athletics), Dexterity (Acrobatics), and a special constitution check which is 1d20 + CON bonus + hit die roll. The character can also replace one of these checks with an attack roll with a weapon of choice that is valid for the type of combat. The DC for each check is determined by the DM.</dd>
-				<dt>Result</dt>
-				<dd>
-					<table>
-						<thead>
-							<tr>
-								<th>Successes</th>
-								<th>Reward</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>0</td>
-								<td>None</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>50gp</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>100gp</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>200gp</td>
-							</tr>
-						</tbody>
-					</table>
-				</dd>
-			</dl>
-		</dd>
-		<dt>Relaxation</dt>
-		<dd>
-			<p>Sometimes the best thing to do between adventures is relax. Whether a character wants a hard earned vacation or needs to recover from injuries, relaxation is the ideal option for adventurers who need a break.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 week</dd>
-				<dt>Resources</dt>
-				<dd>A modest lifestyle for the whole week (1 gp for each day = 7 gp)</dd>
-				<dt>Result</dt>
-				<dd>
-					<ul>
-						<li>During the action, gain advantage on saving throws vs long-acting disease/poisons</li>
-						<li>
-							At the end of the rest can do EITHER (only non-magical effects):
-							<ul>
-								<li>End one effect that keeps the character from regaining hitpoints</li>
-								<li>Can restore one ability score that has been reduced</li>
-							</ul>
-						</li>
-					</ul>
-				</dd>
-			</dl>
-		</dd>
-		<dt>Religious Service</dt>
-		<dd>
-			<p>Characters with a religious bent might want to spend downtime in service to a temple, either by attending rites or by proselytizing in the community.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 workweek</dd>
-				<dt>Roll</dt>
-				<dd>1 of either Intelligence (Religion) or Charisma (Persuasion)</dd>
-				<dt>Result</dt>
-				<dd>Possibility of 1 or more favors from the clergy or god of the religion. The favor can be expended to request aid such as political or social support, help with dealing with a specific problem, knowledge, deity intervention such as an omen or vision (up to DM's discretion). A character may only have (1 + CHA MOD) favors, with a minimum of 1, at a time.</dd>
-			</dl>
-		</dd>
-		<dt>Research</dt>
-		<dd>
-			<p>Forewarned is forearmed. The research downtime activity allows a character to delve into lore concerning a monster, a location, a magic item, or some other particular topic.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 workweek</dd>
-				<dt>Resources</dt>
-				<dd>Access to local sage or library and 50gp spent on bribes, materials, gifts, etc</dd>
-				<dt>Roll</dt>
-				<dd>Intelligence check</dd>
-				<dt>Bonus</dt>
-				<dd>+1 per additional 100gp spent beyond first to a max of 6. Advantage if the sage or library is particularly well stocked or suited toward the research project.</dd>
-				<dt>Result</dt>
-				<dd>Possibility of learning 1-3 pieces of lore about the chosen topic.</dd>
-			</dl>
-		</dd>
-		<dt>Scribing a Spell Scroll</dt>
-		<dd>
-			<p>With time and patience, a spellcaster can transfer a spell to a scroll, creating a spell scroll. They may also apply a magical cipher, making the scroll more difficult to read.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>Time corresponding to the spell level (shown in chart below)</dd>
-				<dt>Resources</dt>
-				<dd>Gold corresponding to the spell level (shown in chart below) and the materials required to cast the spell</dd>
-				<dt>Requirements</dt>
-				<dd>
-					<ul>
-						<li>Proficiency in the Arcana skill</li>
-						<li>The character must know the spell they are attempting to scribe</li>
-					</ul>
-				</dd>
-				<dt>Spell Scroll Costs</dt>
-				<dd>
-					<table>
-						<thead>
-							<tr>
-								<th>Spell Level</th>
-								<th>Time</th>
-								<th>Cost</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Cantrip</td>
-								<td>1 hour</td>
-								<td>5gp</td>
-							</tr>
-							<tr>
-								<td>1st</td>
-								<td>1 workday</td>
-								<td>10gp</td>
-							</tr>
-							<tr>
-								<td>2nd</td>
-								<td>1 workday</td>
-								<td>25gp</td>
-							</tr>
-							<tr>
-								<td>3rd</td>
-								<td>2 workdays</td>
-								<td>50gp</td>
-							</tr>
-							<tr>
-								<td>4th</td>
-								<td>3 workdays</td>
-								<td>100gp</td>
-							</tr>
-							<tr>
-								<td>5th</td>
-								<td>1 workweek</td>
-								<td>200gp</td>
-							</tr>
-							<tr>
-								<td>6th</td>
-								<td>1 workweek</td>
-								<td>400gp</td>
-							</tr>
-							<tr>
-								<td>7th</td>
-								<td>1 workweek</td>
-								<td>1,000gp</td>
-							</tr>
-							<tr>
-								<td>8th</td>
-								<td>2 workweeks</td>
-								<td>2,500gp</td>
-							</tr>
-							<tr>
-								<td>9th</td>
-								<td>3 workweeks</td>
-								<td>5,000gp</td>
-							</tr>
-						</tbody>
-					</table>
-				</dd>
-				<dt>Magic Cipher</dt>
-				<dd>
-					<table>
-						<thead>
-							<tr>
-								<th>Int Modifier</th>
-								<th>Cipher DC</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>&lt;=0</td>
-								<td>5</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>10</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>15</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>20</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>25</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>30</td>
-							</tr>
-						</tbody>
-					</table>
-				</dd>
-				<dt>Result</dt>
-				<dd>A spell scroll</dd>
-			</dl>
-		</dd>
-		<dt>Selling a Magic Item</dt>
-		<dd>
-			<p>Selling a magic item is by no means an easy task. Con artists and thieves are always looking out for an easy score, and there's no guarantee that a character will receive a good offer even if a legitimate buyer is found.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 workweek</dd>
-				<dt>Resources</dt>
-				<dd>An item to sell and 25gp used to spread word of the desired sell</dd>
-				<dt>Roll</dt>
-				<dd>Charisma (Persuasion)</dd>
-				<dt>Result</dt>
-				<dd>A potential buyer for the magic item.</dd>
-			</dl>
-		</dd>
-		<dt>Training</dt>
-		<dd>
-			<p>Given enough free time and the services of an instructor, a character can learn a language or pick up a proficiency with a tool. This training does not have to occur consecutively, but could incur penalties if there is too much time between training sessions.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>(10 - INT MOD) workweeks, there is no penalty for a negative INT MOD.</dd>
-				<dt>Resources</dt>
-				<dd>25 gp per workweek</dd>
-				<dt>Result</dt>
-				<dd>Learn a new skill</dd>
-			</dl>
-		</dd>
-		<dt>Work</dt>
-		<dd>
-			<p>When all else fails, an adventurer can turn to an honest trade to earn a living, This activity represents a character's attempt to find temporary work, the quality and wages of which are difficult to predict.</p>
-			<dl>
-				<dt>Time</dt>
-				<dd>1 workweek</dd>
-				<dt>Roll</dt>
-				<dd>1 of STR (Athletics), DEX (Acrobatics), INT using tools, CHA (Performance), or CHA using an instrument</dd>
-				<dt>Result</dt>
-				<dd>A wage between 2sp and 2gp based on the roll.</dd>
-			</dl>
-		</dd>
-	</dl>
+	<body>
+		<h2>Downtime Activities</h2>
+		
+		<dl class="activities-list">
+			<dt>Brewing a Potion</dt>
+			<dd>
+				<p>Healing potions can be extremely useful to a party to be healthy in a pinch.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>Time dependinng on power of potion</dd>
+					<dt>Resources</dt>
+					<dd>Gold depending on power of potion</dd>
+					<dt>Requirements</dt>
+					<dd>Proficiency of an herbalism kit and access to one, or an equivelant setup</dd>
+				</dl>
+				<table>
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th>Time</th>
+							<th>Cost</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Standard</td>
+							<td>8 hours</td>
+							<td>10gp</td>
+						</tr>
+						<tr>
+							<td>Greater</td>
+							<td>1 workweek</td>
+							<td>50gp</td>
+						</tr>
+						<tr>
+							<td>Superior</td>
+							<td>3 workweeks</td>
+							<td>100gp</td>
+						</tr>
+						<tr>
+							<td>Supreme</td>
+							<td>4 workweeks</td>
+							<td>250gp</td>
+						</tr>
+					</tbody>
+				</table>
+			</dd>
+			<dt>Buying a Magic Item</dt>
+			<dd>
+				<p>Purchasing a magic item requires time and money to seek out and contact people willing to sell items. Even then, there is no guarantee a seller will have the items a character desires.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>At least 1 workweek</dd>
+					<dt>Resources</dt>
+					<dd>100gp</dd>
+					<dt>Roll</dt>
+					<dd>Charisma (Persuasion)</dd>
+					<dt>Bonus</dt>
+					<dd>+1 to roll per additional Time/Resources spent up to a maximum of 10</dd>
+					<dt>Result</dt>
+					<dd>A potential magic item to purchase.</dd>
+				</dl>
+			</dd>
+			<dt>Carousing</dt>
+			<dd>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 workweek</dd>
+					<dt>Resources</dt>
+					<dd>10gp, 50gp, or 250gp for lower, middle, and upper class respectively</dd>
+					<dt>Roll</dt>
+					<dd>Charisma (Persuasion)</dd>
+					<dt>Result</dt>
+					<dd>Possibility of Hostile or Allied contacts. A hostile contact works against the player, whereas an allied contact will aid the player. A character can only have (1 + CHA MOD) allied contacts, with a minimum of 1, at a time.</dd>
+				</dl>
+			</dd>
+			<dt>Crafting an Item</dt>
+			<dd>
+				<p>A characer who has the time, the money, and the needed tools can use downtime to craft armor, weapons, clothing, or other kinds of gear.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>(Gp cost of item)/50 workweeks</dd>
+					<dt>Resources</dt>
+					<dd>Appropriate tool and (Gp cost of item)/2 worth of materials</dd>
+					<dt>Bonus</dt>
+					<dd>Multiple characters can combine effort to create an item. Time = Workweeks/Characters.</dd>
+					<dt>Result</dt>
+					<dd>An item!</dd>
+				</dl>
+			</dd>
+			<dt>Crime</dt>
+			<dd>
+				<p>Sometime it pays to be bad. This activity gives a character the chance to make some extra cash, at the risk of arrest.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 week</dd>
+					<dt>Resources</dt>
+					<dd>25gp to gather information on potential targets</dd>
+					<dt>Roll</dt>
+					<dd>The character chooses a DC for the target reward based on the table below. The rolls are the following: Dexterity (Stealth), Dexterity using Thieves' Tools, and the choice of Intelligence (Investigation), Wisdom (Perception), or Charisma (Deception).</dd>
+					<dt>Result</dt>
+					<dd>If none of the checks are successful, the character is jailed. They must pay a fine equal to potential earning and spend 1 week in jail per 25gp of the fine. If one check succeeds, the heist fails but the character escapes. Two checks successful, 1/2 the payout. Three checks successful, the full payout.</dd>
+					<dt>Payouts</dt>
+					<dd>
+						<table>
+							<thead>
+								<tr>
+									<th>DC</th>
+									<th>Payout</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>10</td>
+									<td>50gp</td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>100gp</td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>200gp</td>
+								</tr>
+								<tr>
+									<td>25</td>
+									<td>1000gp</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+			</dd>
+			<dt>Gambling</dt>
+			<dd>
+				<p>Games of chance are a way to make a fortune - and perhaps a better way to lose one.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 workweek</dd>
+					<dt>Resources</dt>
+					<dd>At least 10gp</dd>
+					<dt>Roll</dt>
+					<dd>3 separate checks, Wisdom (Insight), Charisma (Deception), and Charisma (Intimidation). The DC for each check is determined by the DM.</dd>
+					<dt>Result`</dt>
+					<dd>The results below assume you've already paid your initial wager. For example: Jerry wagers 10gp and rolls 1 success. So, the result is -10gp + 0.5 * 10gp = -10gp + 5gp = -5gp. Jerry lost 5gp from gambling.</dd>
+					<dt>Payout</dt>
+					<dd>
+						<table>
+							<thead>
+								<tr>
+									<th>Successes</th>
+									<th>Payout</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0</td>
+									<td>Lost 1*Wager</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Gain 0.5*Wager</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Gain 1.5*Wager</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Gain 2*Wager</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+			</dd>
+			<dt>Pit Fighting</dt>
+			<dd>
+				<p>Pit fighting includes boxing, wrestling, and other non lethal forms of combat in an organized setting with predetermined matches.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 workweek</dd>
+					<dt>Roll</dt>
+					<dd>3 separate checks, Strength (Athletics), Dexterity (Acrobatics), and a special constitution check which is 1d20 + CON bonus + hit die roll. The character can also replace one of these checks with an attack roll with a weapon of choice that is valid for the type of combat. The DC for each check is determined by the DM.</dd>
+					<dt>Result</dt>
+					<dd>
+						<table>
+							<thead>
+								<tr>
+									<th>Successes</th>
+									<th>Reward</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0</td>
+									<td>None</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>50gp</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>100gp</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>200gp</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+			</dd>
+			<dt>Relaxation</dt>
+			<dd>
+				<p>Sometimes the best thing to do between adventures is relax. Whether a character wants a hard earned vacation or needs to recover from injuries, relaxation is the ideal option for adventurers who need a break.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 week</dd>
+					<dt>Resources</dt>
+					<dd>A modest lifestyle for the whole week (1 gp for each day = 7 gp)</dd>
+					<dt>Result</dt>
+					<dd>
+						<ul>
+							<li>During the action, gain advantage on saving throws vs long-acting disease/poisons</li>
+							<li>
+								At the end of the rest can do EITHER (only non-magical effects):
+								<ul>
+									<li>End one effect that keeps the character from regaining hitpoints</li>
+									<li>Can restore one ability score that has been reduced</li>
+								</ul>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</dd>
+			<dt>Religious Service</dt>
+			<dd>
+				<p>Characters with a religious bent might want to spend downtime in service to a temple, either by attending rites or by proselytizing in the community.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 workweek</dd>
+					<dt>Roll</dt>
+					<dd>1 of either Intelligence (Religion) or Charisma (Persuasion)</dd>
+					<dt>Result</dt>
+					<dd>Possibility of 1 or more favors from the clergy or god of the religion. The favor can be expended to request aid such as political or social support, help with dealing with a specific problem, knowledge, deity intervention such as an omen or vision (up to DM's discretion). A character may only have (1 + CHA MOD) favors, with a minimum of 1, at a time.</dd>
+				</dl>
+			</dd>
+			<dt>Research</dt>
+			<dd>
+				<p>Forewarned is forearmed. The research downtime activity allows a character to delve into lore concerning a monster, a location, a magic item, or some other particular topic.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 workweek</dd>
+					<dt>Resources</dt>
+					<dd>Access to local sage or library and 50gp spent on bribes, materials, gifts, etc</dd>
+					<dt>Roll</dt>
+					<dd>Intelligence check</dd>
+					<dt>Bonus</dt>
+					<dd>+1 per additional 100gp spent beyond first to a max of 6. Advantage if the sage or library is particularly well stocked or suited toward the research project.</dd>
+					<dt>Result</dt>
+					<dd>Possibility of learning 1-3 pieces of lore about the chosen topic.</dd>
+				</dl>
+			</dd>
+			<dt>Scribing a Spell Scroll</dt>
+			<dd>
+				<p>With time and patience, a spellcaster can transfer a spell to a scroll, creating a spell scroll. They may also apply a magical cipher, making the scroll more difficult to read.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>Time corresponding to the spell level (shown in chart below)</dd>
+					<dt>Resources</dt>
+					<dd>Gold corresponding to the spell level (shown in chart below) and the materials required to cast the spell</dd>
+					<dt>Requirements</dt>
+					<dd>
+						<ul>
+							<li>Proficiency in the Arcana skill</li>
+							<li>The character must know the spell they are attempting to scribe</li>
+						</ul>
+					</dd>
+					<dt>Spell Scroll Costs</dt>
+					<dd>
+						<table>
+							<thead>
+								<tr>
+									<th>Spell Level</th>
+									<th>Time</th>
+									<th>Cost</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Cantrip</td>
+									<td>1 hour</td>
+									<td>5gp</td>
+								</tr>
+								<tr>
+									<td>1st</td>
+									<td>1 workday</td>
+									<td>10gp</td>
+								</tr>
+								<tr>
+									<td>2nd</td>
+									<td>1 workday</td>
+									<td>25gp</td>
+								</tr>
+								<tr>
+									<td>3rd</td>
+									<td>2 workdays</td>
+									<td>50gp</td>
+								</tr>
+								<tr>
+									<td>4th</td>
+									<td>3 workdays</td>
+									<td>100gp</td>
+								</tr>
+								<tr>
+									<td>5th</td>
+									<td>1 workweek</td>
+									<td>200gp</td>
+								</tr>
+								<tr>
+									<td>6th</td>
+									<td>1 workweek</td>
+									<td>400gp</td>
+								</tr>
+								<tr>
+									<td>7th</td>
+									<td>1 workweek</td>
+									<td>1,000gp</td>
+								</tr>
+								<tr>
+									<td>8th</td>
+									<td>2 workweeks</td>
+									<td>2,500gp</td>
+								</tr>
+								<tr>
+									<td>9th</td>
+									<td>3 workweeks</td>
+									<td>5,000gp</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+					<dt>Magic Cipher</dt>
+					<dd>
+						<table>
+							<thead>
+								<tr>
+									<th>Int Modifier</th>
+									<th>Cipher DC</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>&lt;=0</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>15</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>25</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>30</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+					<dt>Result</dt>
+					<dd>A spell scroll</dd>
+				</dl>
+			</dd>
+			<dt>Selling a Magic Item</dt>
+			<dd>
+				<p>Selling a magic item is by no means an easy task. Con artists and thieves are always looking out for an easy score, and there's no guarantee that a character will receive a good offer even if a legitimate buyer is found.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 workweek</dd>
+					<dt>Resources</dt>
+					<dd>An item to sell and 25gp used to spread word of the desired sell</dd>
+					<dt>Roll</dt>
+					<dd>Charisma (Persuasion)</dd>
+					<dt>Result</dt>
+					<dd>A potential buyer for the magic item.</dd>
+				</dl>
+			</dd>
+			<dt>Training</dt>
+			<dd>
+				<p>Given enough free time and the services of an instructor, a character can learn a language or pick up a proficiency with a tool. This training does not have to occur consecutively, but could incur penalties if there is too much time between training sessions.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>(10 - INT MOD) workweeks, there is no penalty for a negative INT MOD.</dd>
+					<dt>Resources</dt>
+					<dd>25 gp per workweek</dd>
+					<dt>Result</dt>
+					<dd>Learn a new skill</dd>
+				</dl>
+			</dd>
+			<dt>Work</dt>
+			<dd>
+				<p>When all else fails, an adventurer can turn to an honest trade to earn a living, This activity represents a character's attempt to find temporary work, the quality and wages of which are difficult to predict.</p>
+				<dl>
+					<dt>Time</dt>
+					<dd>1 workweek</dd>
+					<dt>Roll</dt>
+					<dd>1 of STR (Athletics), DEX (Acrobatics), INT using tools, CHA (Performance), or CHA using an instrument</dd>
+					<dt>Result</dt>
+					<dd>A wage between 2sp and 2gp based on the roll.</dd>
+				</dl>
+			</dd>
+		</dl>
 
-	<a class="toc-link" href="/">Back to Table of Contents</a>
-</body>
+		<a class="toc-link" href="/">Back to Table of Contents</a>
+	</body>
+</html>
