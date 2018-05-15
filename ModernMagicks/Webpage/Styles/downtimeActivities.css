@@ -13,27 +13,7 @@ p + dl > dt::after {
 	content: ":";
 }
 
-p, dl, table {
-	margin: 0;
-}
-
 .activities-list p,
 .activities-list > dd > dl > dd {
 	max-width: 50em;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table, th, td {
-	border: 1px solid black;
-}
-
-th, td {
-	margin: 0.25em;
-}
-
-.toc-link {
-	margin-top: 2em;
 }

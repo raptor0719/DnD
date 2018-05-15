@@ -1,0 +1,32 @@
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 0.25em;
+}
+
+p, table, dd {
+	max-width: 50em;
+}
+
+p, samp, table {
+	margin: 0 0 0.5em 0;
+}
+
+samp {
+	display: block;
+}
+
+h2, h3, h4 {
+	margin-bottom: 0;
+}
+
+.toc-link {
+	display: block;
+	margin-top: 3em;
+}
