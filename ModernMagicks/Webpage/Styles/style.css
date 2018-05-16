@@ -46,11 +46,6 @@ body > dl > dt {
 	margin-top: 2em;
 }
 
-.toc-link {
-	display: block;
-	margin: 0;
-}
-
 a {
 	text-decoration: none;
 }
@@ -58,4 +53,13 @@ a {
 a:visited {
 	text-decoration: none;
 	color: #0000EE;
+}
+
+.toc-link {
+	display: block;
+	margin: 0;
+}
+
+#dmSection {
+	float: right;
 }
