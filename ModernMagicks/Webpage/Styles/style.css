@@ -28,22 +28,30 @@ h2, h3, h4 {
 
 ul {
 	margin: 0;
-	padding: 0 0 0 2em;
 }
 
-dd > dl > dt {
+dd > ul {
+	padding: 0;
+}
+
+dt {
 	text-decoration: underline;
 }
 
-dd > dl > dt::after {
+dt::after {
 	content: ":";
 }
 
-body > dl > dt {
+dl.entryList > dt {
 	font-size: 1.15em;
 	font-style: italic;
 	font-weight: bolder;
 	margin-top: 2em;
+	text-decoration: none;
+}
+
+dl.entryList > dt::after {
+	content: "";
 }
 
 a {
