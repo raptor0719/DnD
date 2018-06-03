@@ -1,0 +1,38 @@
+h3 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+h4 {
+	font-style: italic;
+	margin: 0;
+}
+
+dt {
+	font-weight: bolder;
+	float: left;
+	padding-right: 0.5em;
+}
+
+dl {
+	border-collapse: collapse;
+	border-top: 3px solid black;
+	margin: 0;
+	padding: 0 0.5em;
+}
+
+dl.abilities > dt::after,
+dl.actions > dt::after {
+	content: ".";
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0.5em;
+}
+
+table td,
+table th {
+	border: 1px solid black;
+	padding: 0.3em 0.5em;
+}
